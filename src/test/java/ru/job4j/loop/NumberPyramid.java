@@ -8,7 +8,7 @@ public class NumberPyramid {
                 System.out.print(" ");
             }
             // Печатаем числа в прямом порядке
-            for (int k = 1; k <= i ; k++) {
+            for (int k = 1; k <= i; k++) {
                 System.out.print(k);
             }
             // Печатаем числа в обратном порядке
