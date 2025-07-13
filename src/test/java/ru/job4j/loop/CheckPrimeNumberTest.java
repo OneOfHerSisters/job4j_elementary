@@ -52,4 +52,11 @@ class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
+
+    @Test
+    void when0ThenFalse() {
+        int number = 0;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isFalse();
+    }
 }
