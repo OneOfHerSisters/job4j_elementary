@@ -24,7 +24,6 @@ class FindLoopTest {
         Можно искать любое другое число, корректно изменив при этом название теста */
     }
 
-
     @Test
     public void whenDiapasonHas8ThenResultEqualFinish() {
         int[] data = new int[] {5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
@@ -81,5 +80,4 @@ class FindLoopTest {
         int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
-
 }
