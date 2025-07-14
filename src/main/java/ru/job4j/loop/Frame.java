@@ -6,20 +6,9 @@ public class Frame {
         boolean isSideBorder;
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
-                if ((row == 0 && col == 0) || (row == size - 1 && col == size - 1)
-                        || (row == size - 1 && col == 0) || (row == 0 && col == size - 1)) {
-                    isTopOrBottomBorder = true;
-                    isSideBorder = true;
-                } else if (row == size - 1 || row == 0) {
-                    isSideBorder = false;
-                    isTopOrBottomBorder = true;
-                } else if (col == size - 1 || col == 0) {
-                    isSideBorder = true;
-                    isTopOrBottomBorder = false;
-                } else {
-                    isSideBorder = false;
-                    isTopOrBottomBorder = false;
-                }
+
+                isTopOrBottomBorder = row == 0 || row == size - 1;
+                isSideBorder = col == 0 || col == size - 1;
 
                 if (isTopOrBottomBorder && isSideBorder) {
                     System.out.print("+");
