@@ -10,7 +10,6 @@ public class ArrayDefinition {
         names[1] = "Olga Tokarczuk";
         names[2] = "Henryk Sinkiewicz";
         names[3] = "Julian Tuwim";
-
         System.out.println(ages.length);
         System.out.println(surnames.length);
         System.out.println(prices.length);

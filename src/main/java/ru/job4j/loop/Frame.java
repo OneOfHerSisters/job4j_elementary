@@ -6,19 +6,16 @@ public class Frame {
         boolean isSideBorder;
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
-
                 isTopOrBottomBorder = row == 0 || row == size - 1;
                 isSideBorder = col == 0 || col == size - 1;
-
                 if (isTopOrBottomBorder && isSideBorder) {
                     System.out.print("+");
-                    // Углы рамки
                 } else if (isTopOrBottomBorder) {
-                    System.out.print("-"); // Верхняя и нижняя границы
+                    System.out.print("-");
                 } else if (isSideBorder) {
-                    System.out.print("|"); // Левые и правые границы
+                    System.out.print("|");
                 } else {
-                    System.out.print(" "); // Внутреннее пространство рамки
+                    System.out.print(" ");
                 }
             }
             System.out.println();
